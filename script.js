@@ -5,14 +5,15 @@ var selection = document.getElementById('selecao');
 function Ative() {
     checkbar = !checkbar;
     if(checkbar) {
-        selection.style.marginLeft = "-10vw";
+        selection.style.marginLeft = "0vw";
+        selection.style.padding = "1em"
         selection.style.animationName = "animacao";
         all.style.filter = "blur(2px)";
     } else{
         selection.style.marginLeft = "-100vw";
         selection.style.animationName = "";
-        all.style.filter = "";
-    }
+        all.style.filter = "";
+    }
 }
 function fechar() {
     if (checkbar) {
@@ -27,6 +28,7 @@ function fechar() {
 
   darks = false
   var OnOff = document.getElementById('OnOff')
+  var Circle = document.getElementById('circle')
 
 
   function DarkMode() {
@@ -34,11 +36,25 @@ function fechar() {
     if(darks) {
         OnOff.style.justifyContent = "right"
         OnOff.style.animationName = "darkmodeactive"
+        document.body.classList.add('DarkMode')
+        OnOff.style.backgroundColor = "#2F2F2F"
+        Circle.style.backgroundColor = "white"
+        document.querySelectorAll('.navbar a').forEach(link => {
+          link.classList.add('preto-mode');
+        });
+        document.getElementById('retangle').style.backgroundColor = 'black'
     } else{
         OnOff.style.justifyContent = "left"
         OnOff.style.animationName = ""
-    }
-  }
+        document.body.classList.remove('DarkMode')
+        OnOff.style.backgroundColor = "white"
+        Circle.style.backgroundColor = "#2F2F2F"
+        document.querySelectorAll('.navbar a').forEach(link => {
+          link.classList.remove('preto-mode');
+        });
+        document.getElementById('retangle').style.backgroundColor = 'white'
+    }
+  }
 
 
 
