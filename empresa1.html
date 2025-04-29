@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <button class="botton" onclick="Ative()"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <h2>Maria<g>Rita</g>Imóveis</h2>
+        </div>
+        <div id="retangle"></div>
+        <div id="selecao" class="selection">
+            <button class="botton" onclick="Ative()"><i class="fa-solid fa-xmark"></i></button>
+            <a href="">Home</a>
+            <a href=""><g>Sobre Mim</g></a><!--O "g" serve para demarcar qual página está!!!-->
+            <a href="">FAQS</a>
+            <botton onclick="DarkMode()">
+                <div id="OnOff">
+                    <div id="circle"></div>
+                </div>
+            </botton>
+        </div>
+    </div>
+
+
+    <div class="central" >
+        
+        <div class="voltarinicio">
+            <button class="inicio"><p>Voltar a página inicial</p><img src="./imagens/up.png" alt=""></button>
+        </div>
+
+            <div class="slider">
+                <button id="prev"><img src="../Carroselimg/arrow.png" alt=""></button>
+
+                <div class="slide-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_PORTARIA_RFA2_2024-09-02bb5fc6ec-3850-46a5-8267-5d47ab14d2e1.webp" alt="" class="slider-img on" >
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_CHURRASQUERA_RFA2_2024-09-024f147776-5612-42a8-b010-1abfc2d64138.webp" alt="" class="slider-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_PLAY_RFA2_04735bc0-72fd-4810-91ed-b7cb0fe122c5.webp" alt="" class="slider-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_CHURRASQUERA_RFA2_2024-09-024f147776-5612-42a8-b010-1abfc2d64138.webp" alt="" class="slider-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_FESTAS_RFA2_2024-09-02dca82b8c-68b2-41f7-b062-76a83e124812.webp" alt="" class="slider-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_GOURMET_RFA2_2024-09-022704b6e3-a79e-4e64-bdb7-7b715f1b2146.webp" alt="" class="slider-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/PPC_SPAZIO-IMPERATRIZ_KIDS_RFA2_2024-09-30683b4b06-9f6d-494c-8a6a-53c27a0ec7b6.webp" alt="" class="slider-img">
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/SPAZIO-IMPERATRIZ_JOGOS_RF_2024-08-275c062c36-804f-46d0-b8d9-0638bb3341b0.webp" alt="" class="slider-img" >
+                    <img src="https://cdn.mrv.com.br/imoveis/upload/imagens/4658/SPAZIO-IMPERATRIZ_PISCINA_RFA1_2024-08-277ad5c914-9bd3-4fb6-be63-19152393f1f0.webp" alt="" class="slider-img">
+                </div>
+            
+                <button id="next"><img src="../Carroselimg/arrow.png" alt=""></button>
+            </div>
+
+        <div class="descriçao">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ratione doloribus provident ullam aspernatur corporis sed excepturi omnis, mollitia voluptatibus distinctio earum quo nemo aut tenetur optio quaerat delectus saepe!</p>
+        </div>
+
+
+        <div class="whatsapp">
+            <a href=""> <button>Chama no zap!</button></a>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
